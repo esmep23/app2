@@ -72,8 +72,10 @@ $( document ).ready(function() {
     else if( userAgent.match( /Android/i ) )
     {
       _dispositivo = 1;
-      $('.ads-noticias2').attr('onclick','window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
-      $('#link_bscFan').attr('onclick','window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
+      $('.ads-proximo1').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
+      $('.ads-proximo2').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
+      $('.ads-noticias2').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
+      $('#link_bscFan').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
       
       alert('Android');//return 'Android';
     }
