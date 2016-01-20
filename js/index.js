@@ -65,6 +65,8 @@ $( document ).ready(function() {
       $('.ads-proximo1').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
       $('.ads-proximo2').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
       $('.ads-noticias2').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
+      $('.ads-distribucion1').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
+      $('.ads-minuto1').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
       $('#link_bscFan').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
       
       alert('iOS');//return 'iOS';
@@ -75,6 +77,8 @@ $( document ).ready(function() {
       $('.ads-proximo1').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
       $('.ads-proximo2').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
       $('.ads-noticias2').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
+      $('.ads-distribucion1').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
+      $('.ads-minuto1').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
       $('#link_bscFan').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
       
       alert('Android');//return 'Android';
