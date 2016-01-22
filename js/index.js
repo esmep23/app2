@@ -20,6 +20,7 @@ var arrayPuntajesGD = new Array();
 var arrayPuntajesPTS = new Array();
 var intervalo;
 var _dispositivo = 0;
+var value;
 /*/**/
 var mesNoticia;
 
@@ -87,8 +88,8 @@ $( document ).ready(function() {
 
   
   //token
-  var value = localStorage.getItem('token');
-  alert(value);
+  value = localStorage.getItem('token');
+  //alert(value);
   if(value){
     clearInterval(intervalo);
     getVideos();
@@ -742,6 +743,12 @@ function getPartidoProximo(argument){
 $(document).on('pageshow', '#principal', function(){ 
     getVideos();
     clearInterval(intervalo);
+    if(value){
+
+    }else{
+      localStorage.setItem('token', "1");
+      $.mobile.changePage("#principal");
+    }
 });
 
 $(document).on('pagebeforeshow', '#proximopartido', function(){  
