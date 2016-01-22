@@ -32,7 +32,10 @@ partidoActual = 8;
 /////////////////////////////////////////////////////////
 $( document ).ready(function() {
 
+  if(navigator.onLine){
+    alert('Online');
 
+    
   var tamanPantallaHeight = $(window).height()+100;
   porcentaje = (tamanPantallaHeight * 66) /100;
   $('#video').css('width',$(window).width()+100);
@@ -256,6 +259,12 @@ $( document ).ready(function() {
       
       //escondo objetos
       $('.pause_button').hide();
+
+
+    
+  } else {
+    alert('Offline')
+  }
 
 
 
