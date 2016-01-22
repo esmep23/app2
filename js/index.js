@@ -35,7 +35,7 @@ $( document ).ready(function() {
   if(navigator.onLine){
     alert('Online');
 
-    
+
   var tamanPantallaHeight = $(window).height()+100;
   porcentaje = (tamanPantallaHeight * 66) /100;
   $('#video').css('width',$(window).width()+100);
@@ -142,9 +142,9 @@ $( document ).ready(function() {
     }
   } /*load_img*/
 
-  /*
+  
   //token
-  //var value = localStorage.getItem('token');
+  var value = localStorage.getItem('token');
   if(value){
     clearInterval(intervalo);
     getVideos();
@@ -154,10 +154,10 @@ $( document ).ready(function() {
 
   }else{
 
-    */intervalo = setInterval(load_img, 30);/*
+    intervalo = setInterval(load_img, 30);/*
 
   }
-  */
+  
       getNoticias();
       cargoUnidadEquipo();
       cargoCampeonato();
@@ -261,7 +261,7 @@ $( document ).ready(function() {
       $('.pause_button').hide();
 
 
-    
+
   } else {
     alert('Offline')
   }
