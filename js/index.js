@@ -262,6 +262,7 @@ $( document ).ready(function() {
 
 
   } else {
+    
     //alert('Offline')
     new Messi('Necesitas Internet para cargar la Aplicación', {title: 'BSC - OFFICIAL'});
 
