@@ -33,7 +33,7 @@ partidoActual = 8;
 $( document ).ready(function() {
 
   if(navigator.onLine){
-    alert('Online');
+    //alert('Online');
 
 
   var tamanPantallaHeight = $(window).height()+100;
@@ -83,7 +83,7 @@ $( document ).ready(function() {
       $("#link_bscFan").click(function(){
           window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
       });
-      alert('iOS');//return 'iOS';
+      //alert('iOS');//return 'iOS';
     }
     else if( userAgent.match( /Android/i ) )
     {
@@ -107,13 +107,13 @@ $( document ).ready(function() {
       $("#link_bscFan").click(function(){
           window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
       });
-      alert('Android');//return 'Android';
+      //alert('Android');//return 'Android';
     }
     else
     {
 
 
-      alert('unknown');//return 'unknown';
+      //alert('unknown');//return 'unknown';
 
     }
   }
@@ -261,9 +261,10 @@ $( document ).ready(function() {
       $('.pause_button').hide();
 
 
-
   } else {
-    alert('Offline')
+    //alert('Offline')
+    new Messi('Necesitas Internet para cargar la Aplicación', {title: 'BSC - OFFICIAL'});
+
   }
 
 
