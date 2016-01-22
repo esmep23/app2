@@ -501,6 +501,7 @@ function getTwitter(){
 }
 
 function getVideos() { 
+
     $.ajax({
       url: direccion+'actions/getVideos.php',
       type: "GET",
@@ -741,8 +742,9 @@ function getPartidoProximo(argument){
 /*********************************************************************/
 
 $(document).on('pageshow', '#principal', function(){ 
-    getVideos();
+    
     clearInterval(intervalo);
+    getVideos();
     if(value){
 
     }else{
