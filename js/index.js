@@ -62,29 +62,54 @@ $( document ).ready(function() {
     if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
     {
       _dispositivo = 2;
-      $('.ads-proximo1').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
-      $('.ads-proximo2').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
-      $('.ads-noticias2').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
-      $('.ads-distribucion1').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
-      $('.ads-minuto1').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
-      $('#link_bscFan').attr('onclick','window.open("https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8", "_system")');
-      
+      $(".ads-proximo1").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
+      $(".ads-proximo2").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
+      $(".ads-noticias2").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
+      $(".ads-distribucion1").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
+      $(".ads-minuto1").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
+      $("#link_bscFan").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
       alert('iOS');//return 'iOS';
     }
     else if( userAgent.match( /Android/i ) )
     {
       _dispositivo = 1;
-      $('.ads-proximo1').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
-      $('.ads-proximo2').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
-      $('.ads-noticias2').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
-      $('.ads-distribucion1').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
-      $('.ads-minuto1').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
-      $('#link_bscFan').attr('onclick','window.open("window.open("https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan", "_system")');
-      
+     
+      $(".ads-proximo1").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
+      $(".ads-proximo2").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
+      $(".ads-noticias2").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
+      $(".ads-distribucion1").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
+      $(".ads-minuto1").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
+      $("#link_bscFan").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
       alert('Android');//return 'Android';
     }
     else
     {
+
+
       alert('unknown');//return 'unknown';
 
     }
