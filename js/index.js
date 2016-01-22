@@ -154,7 +154,7 @@ $( document ).ready(function() {
 
   }else{
 
-    intervalo = setInterval(load_img, 30);/*
+    intervalo = setInterval(load_img, 30);
 
   }
   
