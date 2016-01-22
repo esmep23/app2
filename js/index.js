@@ -59,64 +59,7 @@ $( document ).ready(function() {
    * @returns {String}
    */
    getMobileOperatingSystem();
-  function getMobileOperatingSystem() {
-    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
-    {
-      _dispositivo = 2;
-      $(".ads-proximo1").click(function(){
-          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
-      });
-      $(".ads-proximo2").click(function(){
-          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
-      });
-      $(".ads-noticias2").click(function(){
-          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
-      });
-      $(".ads-distribucion1").click(function(){
-          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
-      });
-      $(".ads-minuto1").click(function(){
-          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
-      });
-      $("#link_bscFan").click(function(){
-          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
-      });
-      //alert('iOS');//return 'iOS';
-    }
-    else if( userAgent.match( /Android/i ) )
-    {
-      _dispositivo = 1;
-     
-      $(".ads-proximo1").click(function(){
-          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
-      });
-      $(".ads-proximo2").click(function(){
-          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
-      });
-      $(".ads-noticias2").click(function(){
-          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
-      });
-      $(".ads-distribucion1").click(function(){
-          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
-      });
-      $(".ads-minuto1").click(function(){
-          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
-      });
-      $("#link_bscFan").click(function(){
-          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
-      });
-      //alert('Android');//return 'Android';
-    }
-    else
-    {
-
-
-      //alert('unknown');//return 'unknown';
-
-    }
-  }
   /*detect*/
 
   jQuery('.square-thumb').nailthumb({
@@ -145,6 +88,7 @@ $( document ).ready(function() {
   
   //token
   var value = localStorage.getItem('token');
+  alert(value);
   if(value){
     clearInterval(intervalo);
     getVideos();
@@ -262,7 +206,7 @@ $( document ).ready(function() {
 
 
   } else {
-    
+
     //alert('Offline')
     new Messi('Necesitas Internet para cargar la Aplicación', {title: 'BSC - OFFICIAL'});
 
@@ -273,6 +217,65 @@ $( document ).ready(function() {
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+    {
+      _dispositivo = 2;
+      $(".ads-proximo1").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
+      $(".ads-proximo2").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
+      $(".ads-noticias2").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
+      $(".ads-distribucion1").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
+      $(".ads-minuto1").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
+      $("#link_bscFan").click(function(){
+          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+      });
+      //alert('iOS');//return 'iOS';
+    }
+    else if( userAgent.match( /Android/i ) )
+    {
+      _dispositivo = 1;
+     
+      $(".ads-proximo1").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
+      $(".ads-proximo2").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
+      $(".ads-noticias2").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
+      $(".ads-distribucion1").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
+      $(".ads-minuto1").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
+      $("#link_bscFan").click(function(){
+          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+      });
+      //alert('Android');//return 'Android';
+    }
+    else
+    {
+
+
+      //alert('unknown');//return 'unknown';
+
+    }
+  }
+
 function descargo(argument){
   var imagePath = argument;
   var imageTitle = "bsc news"; 
