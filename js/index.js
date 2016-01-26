@@ -206,6 +206,8 @@ $( document ).ready(function() {
       $('.pause_button').hide();
 
 
+      getVideos();
+
   } else {
 
     //alert('Offline')
@@ -534,11 +536,11 @@ function getVideos() {
           arrows: false,
           speed: 600
         });
-        /*$('.sliderVideo').on({
+        $('.sliderVideo').on({
           beforeChange: function (event, slick, current_slide_index, next_slide_index) {
             $('div.slick-active object')[0].src = $('div.slick-active object')[0].src;                
           }
-        })*/
+        })
       },
       error : function(error){     
         //alert(error);
@@ -753,7 +755,7 @@ function getPartidoProximo(argument){
 $(document).on('pageshow', '#principal', function(){ 
     
     clearInterval(intervalo);
-    //getVideos();
+    
    //alert(0);
     if(value){
 
