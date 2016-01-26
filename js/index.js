@@ -508,18 +508,19 @@ function getTwitter(){
 }
 
 function getVideos() { 
-
+$('.sliderVideo').empty();
     $.ajax({
       url: direccion+'actions/getVideos.php',
       type: "GET",
       cache: true,
       dataType: "json",
       success: function(response){  
+
         if(response!=null && response!='' && response!='[]'){ 
           $.each(response,function(key,value){ 
             video_embeded = value.link;
             console.log(video_embeded);
-            $('.sliderVideo').empty();
+            alert(1);
             $('.sliderVideo').append('<div style="text-align:center"><object width="100%" height="150"><param name="movie" value="https://www.youtube.com/v/'+video_embeded+'&hl=en_US&feature=player_embedded&version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="https://www.youtube.com/v/'+video_embeded+'?suggestedQuality=medium&hl=en_US&feature=player_embedded&version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="100%" height="150"></embed></object></div>');
             //$('.sliderVideo').append('<div><iframe id="bsc'+key+'" width="100%" height="150" src="https://www.youtube.com/embed/'+link+'?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>');
           });
@@ -530,13 +531,13 @@ function getVideos() {
           autoplay: true,
           dots: true,
           arrows: false,
-          speed: 400
+          speed: 600
         });
-        $('.sliderVideo').on({
+        /*$('.sliderVideo').on({
           beforeChange: function (event, slick, current_slide_index, next_slide_index) {
             $('div.slick-active object')[0].src = $('div.slick-active object')[0].src;                
           }
-        })
+        })*/
       },
       error : function(error){     
         //alert(error);
@@ -573,7 +574,7 @@ function guardoDatos(){
         
         $.mobile.changePage("#principal");
 
-        getVideos();
+        //getVideos();
       },
       error : function(error){     
           //alert(error);
@@ -751,7 +752,8 @@ function getPartidoProximo(argument){
 $(document).on('pageshow', '#principal', function(){ 
     
     clearInterval(intervalo);
-    getVideos();
+   // getVideos();
+   //alert(0);
     if(value){
 
     }else{
