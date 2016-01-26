@@ -375,7 +375,7 @@ function getNoticias() {
             $('.noticias').append('<li class="col-sm-12 col-xs-12 col-md-12"> <div class="row"> <a href="#noticia?noticia='+codigo+'" onclick="getNoticiaPublicada('+codigo+')" data-transition="slide"> <div class="col-sm-6 col-xs-6 col-md-6"> <div class="mini col-md-12 col-sm-12 col-xs-12 text-left">'+dia+'-'+mes+'-'+anio+' </div> <div class="col-sm-10 col-xs-10 col-md-10"> <div class="titulo_noticia">'+titular+' </div></div> </div> <div class="col-sm-6 col-xs-6 col-md-6"> <div class="pictureImage square-thumb" rel="shadowbox" style="background-image:url('+rutaimagen+'img/noticias/'+anio+'/'+mes+'/'+anio+'_'+mes+'_'+dia+'_'+num_news+'_'+picture_quantity+'.jpg)"></div> </div> </a> </div> </li>');
             n++;
             if( (n == '4') || (n == '18') ){
-                if(_dispositivo == 1){
+                if(_dispositivo == 2){
                  $('.noticias').append("<li class='publicidad_noticia col-sm-12 col-xs-12 col-md-12'><a href='https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8'><div class='ads-noticias2' ></div></a></li>");
                 }else{
                   $('.noticias').append("<li class='publicidad_noticia col-sm-12 col-xs-12 col-md-12'><a href='https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan'><div class='ads-noticias2' ></div></a></li>");
@@ -383,7 +383,7 @@ function getNoticias() {
               //$('.noticias').append('<div class="noticia col-sm-12 col-xs-12 col-md-12" onclick="getNoticiaPublicada('+codigo+')"><a href="#noticia?noticia='+codigo+'" data-transition="slide"><div class="imagen-noticias col-sm-12 col-xs-12 col-md-12" style="background-image:url('+rutaimagen+'img/noticias/'+anio+'/'+mes+'/'+anio+'_'+mes+'_'+dia+'_'+num_news+'_'+picture_quantity+'.jpg)"></div><div class="texto-noticias col-sm-12 col-xs-12 col-md-12"><div class="mini col-xs-4 col-md-4 col-sm-4">'+categoria+'</div><div class="mini col-xs-8 col-md-8 col-sm-8">MARTES, 10 DE JUNIO DE 2015</div><div class="col-xs-12 col-md-12 col-sm-12">'+titular+'</div></div></a></div>');
             }else{
               if(n == '10'){
-                if(_dispositivo == 1){
+                if(_dispositivo == 2){
                  $('.noticias').append("<li class='publicidad_noticia col-sm-12 col-xs-12 col-md-12'><a href='https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8'><div class='ads-noticias1' ></div></a></li>");
                 }else{
                   $('.noticias').append("<li class='publicidad_noticia col-sm-12 col-xs-12 col-md-12'><a href='https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan'><div class='ads-noticias1' ></div></a></li>");
