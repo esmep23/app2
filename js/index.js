@@ -217,11 +217,9 @@ $( document ).ready(function() {
 
 
 $('#mypanel ul').on('scroll touchmove mousewheel', function(e){
-  e.preventDefault();
-  e.stopPropagation();
-  return false;
+  $('body').scrollTop(0);
+  //return false;
 })
-
 
 
 });
