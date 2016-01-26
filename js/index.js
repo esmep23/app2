@@ -535,7 +535,7 @@ function getVideos() {
             console.log(video_embeded);
            // alert(1);
 
-            $('.sliderVideo').append('<div style="text-align:center"><iframe width="100%" height="150" src="https://www.youtube.com/v/'+video_embeded+'&hl=en_US&feature=player_embedded&version=3"></iframe></div>');
+            $('.sliderVideo').append('<div style="text-align:center"><iframe width="'+screen.width+'" height="150" src="https://www.youtube.com/v/'+video_embeded+'&hl=en_US&feature=player_embedded&version=3"></iframe></div>');
             //$('.sliderVideo').append('<div><iframe id="bsc'+key+'" width="100%" height="150" src="https://www.youtube.com/embed/'+link+'?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>');
           });
         }
