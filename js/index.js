@@ -249,7 +249,7 @@ $('#mypanel ul').on('scroll touchmove mousewheel', function(e){
           window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
       });
       $("#link_bscFan").click(function(){
-          window.open('https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8');
+          $("#link_bscFan").append('<a href="https://itunes.apple.com/ec/app/bsc-fan/id1038325597?mt=8"><i class="fa fa-bscFan fa-2x"></i><span>BSC FAN</span></a>');
       });
       //alert('iOS');//return 'iOS';
     }
@@ -273,7 +273,7 @@ $('#mypanel ul').on('scroll touchmove mousewheel', function(e){
           window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
       });
       $("#link_bscFan").click(function(){
-          window.open('https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan');
+        $("#link_bscFan").append('<a href="https://play.google.com/store/apps/details?id=air.com.barcelonasc.bscfan"><i class="fa fa-bscFan fa-2x"></i><span>BSC FAN</span></a>');
       });
       //alert('Android');//return 'Android';
     }
