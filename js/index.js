@@ -219,7 +219,7 @@ $( document ).ready(function() {
 $('#mypanel ul').on('scroll touchmove mousewheel', function(e){
   $('body').scrollTop(0);
 
-  alert(height.screen);
+  //alert(height.screen);
   if($('#mypanel ul').scrollTop() = 153){
     return false;
   }
@@ -537,7 +537,7 @@ function getVideos() {
           $.each(response,function(key,value){ 
             video_embeded = value.link;
             console.log(video_embeded);
-            alert(_dispositivo);
+            //alert(_dispositivo);
 
            if(_dispositivo == 2){
             $('.sliderVideo').append('<div style="text-align:center"><object width="100%" height="150"><param name="movie" value="https://www.youtube.com/v/'+video_embeded+'&hl=en_US&feature=player_embedded&version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="https://www.youtube.com/v/'+video_embeded+'?suggestedQuality=medium&hl=en_US&feature=player_embedded&version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="100%" height="150"></embed></object></div>');
